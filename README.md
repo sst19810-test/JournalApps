@@ -12,7 +12,7 @@ This project uses Redis as a distributed cache integrated with Spring Boot to re
 3. Usage:
    1. Cache read methods with `@Cacheable(value = "items", key = "#id")`.
    2. Use `@CachePut` to update and `@CacheEvict` to remove entries.s
-4. Notes:
+4. Notes:sd
    1. Use `StringRedaisSerializer` fssor keys and `Jackson2JsonRedisSerializer` for values.
    2. Configure sensible TTLs and monitor hit/miss rates.
    3. Mitigate cache stampede with locking or request coalescing when needed.
