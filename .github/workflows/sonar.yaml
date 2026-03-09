@@ -1,0 +1,17 @@
+name: SonarQube Local Analysis
+on: [push]
+
+jobs:
+  sonarqube:
+    # This tells GitHub to run the job on your Mac, not in the cloud
+    runs-on: self-hosted 
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
