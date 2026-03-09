@@ -3,7 +3,7 @@
 
 This project uses Redis as a distributed cache integrated with Spring Boot to reduce database load and improve response times.
 
-1. Integration:
+1. Integration:sa
    1. Dependency: `spring-boot-starter-data-redis` (Lettuce).
    2. Enable caching by adding `@EnableCaching` on a configuration class.
 2. Configuration:asdf
