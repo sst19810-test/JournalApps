@@ -6,7 +6,7 @@ This project uses Redis as a distributed cache integrated with Spring Boot to re
 1. Integration:
    1. Dependency: `spring-boot-starter-data-redis` (Lettuce).
    2. Enable caching by adding `@EnableCaching` on a configuration class.
-2. Configuration:
+2. Configuration:asdf
    1. Set `spring.redis.host` and `spring.redis.port` in `application.properties` or `application.yml`.
    2. Define a `RedisCacheManager` bean with serializers and a default TTL.
 3. Usage:
