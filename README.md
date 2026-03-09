@@ -10,7 +10,7 @@ This project uses Redis as a distributed cache integrated with Spring Boot to re
    1. Set `spring.redis.host` and `spring.redis.port` in `application.properties` or `application.yml`.
    2. Define a `RedisCacheManager` bean with serializers and a default TTL.
 3. Usage:
-   1. Cache read methods with `@Cacheable(value = "items", key = "#id")s`.
+   1. Cache read methods with `@Cacheable(value = "items", key = "#id")s`.q
    2. Use `@CachePut` to update and `@CacheEvict` to remove entries.s
 4. Notes:sd
    1. Use `StringRedaisSerializer` fssor keys and `Jackson2JsonRedisSerializer` for values.
